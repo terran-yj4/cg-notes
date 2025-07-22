@@ -266,7 +266,7 @@ class ThreeJSContainer {
                     duration = 1000; // 最初の音符は1秒で移動
                 }
                 const elapsed = time - animationStartTime;
-                const progress = Math.min(elapsed / duration * 2, 1);
+                const progress = Math.min(elapsed / duration * 1.5, 1);
                 if (progress < 1) {
                     // 現在のノートから次のノートへ弧を描いて飛ぶアニメーション
                     const currentPos = currentNoteIndex === 0 ? startPos : notePositions[currentNoteIndex - 1];
